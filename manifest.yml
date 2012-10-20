@@ -1,0 +1,16 @@
+--- 
+applications: 
+  .: 
+    instances: 1
+    mem: 512M
+    name: luckyzenn
+    url: ${name}.${target-base}
+    framework: 
+      info: 
+        exec: 
+        mem: 64M
+        description: Node.js Application
+      name: node
+    services: 
+      mongodb-48b4b: 
+        type: mongodb
